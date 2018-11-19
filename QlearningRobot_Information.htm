@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://quantsoftware.gatech.edu/Qlearning_robot -->
+<html lang="en" dir="ltr" class="client-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Qlearning robot - Quantitative Analysis Software Courses</title>
+<meta name="generator" content="MediaWiki 1.24.6">
+<link rel="shortcut icon" href="http://quantsoftware.gatech.edu/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://quantsoftware.gatech.edu/opensearch_desc.php" title="Quantitative Analysis Software Courses (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://quantsoftware.gatech.edu/api.php?action=rsd">
+<link rel="alternate" hreflang="x-default" href="http://quantsoftware.gatech.edu/Qlearning_robot">
+<link rel="alternate" type="application/atom+xml" title="Quantitative Analysis Software Courses Atom feed" href="http://quantsoftware.gatech.edu/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="./QlearningRobot_Information_files/load.php">
+<style>
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.mw-customtoggle,.mw-collapsible-toggle{cursor:pointer} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: quant_mw1-mw_:resourceloader:filter:minify-css:7:869aa9133c31e6040d4830b259da96a8 */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+/* cache key: quant_mw1-mw_:resourceloader:filter:minify-css:7:f8d0c6895ce3ae14434c16b8fca59432 */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(/resources/src/mediawiki.action/images/green-checkmark.png?2015-12-21T01:01:40Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: quant_mw1-mw_:resourceloader:filter:minify-css:7:e49cc6fecdc8c58ad91b47d58ca16820 */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+/* cache key: quant_mw1-mw_:resourceloader:filter:minify-css:7:ae3fa4570b5ac0c6cf7b3776c8ae4d6f */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: quant_mw1-mw_:resourceloader:filter:minify-css:7:d6b97377f88b35552aa4d885f3a187b4 */</style>
+<script src="./QlearningRobot_Information_files/load(1).php"></script><style type="text/css">
+:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle
+{ display: none !important; }</style><script src="./QlearningRobot_Information_files/load(2).php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Qlearning_robot","wgTitle":"Qlearning robot","wgCurRevisionId":2931,"wgRevisionId":2931,"wgArticleId":155,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Qlearning_robot","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":5,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"watchrollback":0,
+"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});},{},{});
+/* cache key: quant_mw1-mw_:resourceloader:filter:minify-js:7:2ffb09fddb30ef53a64cefb237597916 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","skins.vector.js"]);
+}</script><script src="./QlearningRobot_Information_files/load(3).php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Qlearning_robot skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Qlearning robot</span></h1>
+						<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Quantitative Analysis Software Courses</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="http://quantsoftware.gatech.edu/Qlearning_robot#mw-navigation">navigation</a>, 					<a href="http://quantsoftware.gatech.edu/Qlearning_robot#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="http://quantsoftware.gatech.edu/Qlearning_robot#" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://quantsoftware.gatech.edu/Qlearning_robot#Finalized"><span class="tocnumber">1</span> <span class="toctext">Finalized</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://quantsoftware.gatech.edu/Qlearning_robot#Overview"><span class="tocnumber">2</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://quantsoftware.gatech.edu/Qlearning_robot#Template_and_Data"><span class="tocnumber">3</span> <span class="toctext">Template and Data</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://quantsoftware.gatech.edu/Qlearning_robot#Part_1:_Implement_Q-Learner_.2895_points.29"><span class="tocnumber">4</span> <span class="toctext">Part 1: Implement Q-Learner (95 points)</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://quantsoftware.gatech.edu/Qlearning_robot#Part_2:_Navigation_Problem_Test_Cases"><span class="tocnumber">5</span> <span class="toctext">Part 2: Navigation Problem Test Cases</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://quantsoftware.gatech.edu/Qlearning_robot#Part_3:_Implement_Dyna_.285_points.29"><span class="tocnumber">6</span> <span class="toctext">Part 3: Implement Dyna (5 points)</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://quantsoftware.gatech.edu/Qlearning_robot#Part_4:_Implement_author.28.29_Method_.28up_to_20_point_penalty.29"><span class="tocnumber">7</span> <span class="toctext">Part 4: Implement author() Method (up to 20 point penalty)</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://quantsoftware.gatech.edu/Qlearning_robot#Contents_of_Report"><span class="tocnumber">8</span> <span class="toctext">Contents of Report</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="http://quantsoftware.gatech.edu/Qlearning_robot#Hints_.26_resources"><span class="tocnumber">9</span> <span class="toctext">Hints &amp; resources</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="http://quantsoftware.gatech.edu/Qlearning_robot#What_to_turn_in"><span class="tocnumber">10</span> <span class="toctext">What to turn in</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="http://quantsoftware.gatech.edu/Qlearning_robot#Rubric"><span class="tocnumber">11</span> <span class="toctext">Rubric</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="http://quantsoftware.gatech.edu/Qlearning_robot#Required.2C_Allowed_.26_Prohibited"><span class="tocnumber">12</span> <span class="toctext">Required, Allowed &amp; Prohibited</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="http://quantsoftware.gatech.edu/Qlearning_robot#Legacy"><span class="tocnumber">13</span> <span class="toctext">Legacy</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Finalized">Finalized</span></h2>
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>In this project you will implement the Q-Learning and Dyna-Q solutions to the reinforcement learning problem.  You will apply them to a navigation problem in this project.  In a later project you will apply them to trading.  The reason for working with the navigation problem first is that, as you will see, navigation is an easy problem to work with and understand.  Note that your Q-Learning code really shouldn't care which problem it is solving.  The difference is that you need to wrap the learner in different code that frames the problem for the learner as necessary.
+</p><p>For the navigation problem we have created testqlearner.py that automates testing of your Q-Learner in the navigation problem. 
+</p><p>Overall, your tasks for this project include:
+</p>
+<ul><li> Code a Q-Learner</li>
+<li> Code the Dyna-Q feature of Q-Learning</li>
+<li> Test/debug the Q-Learner in navigation problems</li></ul>
+<p>For this assignment we will test only your code (there is no report component).
+</p>
+<h2><span class="mw-headline" id="Template_and_Data">Template and Data</span></h2>
+<ul><li> Download the template code here: <a href="http://quantsoftware.gatech.edu/File:18fall_qlearning_robot.zip" title="File:18fall qlearning robot.zip">File:18fall qlearning robot.zip</a></li>
+<li> Implement the <tt>QLearner</tt> class in <tt>qlearning_robot/QLearner.py</tt>.</li>
+<li> To debug your Q-learner, run <tt><b>python testqlearner.py</b></tt> from the <tt>qlearning_robot/</tt> directory. The grading script for this project is <tt><b>grade_robot_qlearning.py</b></tt>.</li>
+<li> Note that example navigation problems are provided in the <tt>qlearning_robot/testworlds</tt> directory.</li></ul>
+<h2><span class="mw-headline" id="Part_1:_Implement_Q-Learner_.2895_points.29">Part 1: Implement Q-Learner (95 points)</span></h2>
+<p>Your QLearner class should be implemented in the file <tt>QLearner.py</tt>.  It should implement EXACTLY the API defined below.  DO NOT import any modules besides those allowed below.  Your class should implement the following methods:
+</p><p><b>The constructor QLearner()</b> should reserve space for keeping track of Q[s, a] for the number of states and actions.  It should initialize Q[] with all zeros.  Details on the input arguments to the constructor:
+</p>
+<ul><li> <tt>num_states</tt> integer, the number of states to consider</li>
+<li> <tt>num_actions</tt>  integer, the number of actions available. </li>
+<li> <tt>alpha</tt> float, the learning rate used in the update rule. Should range between 0.0 and 1.0 with 0.2 as a typical value.</li>
+<li> <tt>gamma</tt> float, the discount rate used in the update rule.  Should range between 0.0 and 1.0 with 0.9 as a typical value.</li>
+<li> <tt>rar</tt> float, random action rate: the probability of selecting a random action at each step. Should range between 0.0 (no random actions) to 1.0 (always random action) with 0.5 as a typical value.</li>
+<li> <tt>radr</tt> float, random action decay rate, after each update, rar = rar * radr. Ranges between 0.0 (immediate decay to 0) and 1.0 (no decay).  Typically 0.99.</li>
+<li> <tt>dyna</tt> integer, conduct this number of dyna updates for each regular update.  When Dyna is used, 200 is a typical value.</li>
+<li> <tt>verbose</tt> boolean, if True, your class is allowed to print debugging statements, if False, all printing is prohibited.</li></ul>
+<p><b>query(s_prime, r)</b> is the core method of the Q-Learner.  It should keep track of the last state s and the last action a, then use the new information s_prime and r to update the Q table.  The learning instance, or experience tuple is &lt;s, a, s_prime, r&gt;.  query() should return an integer, which is the next action to take.  Note that it should choose a random action with probability rar, and that it should update rar according to the decay rate radr at each step.  Details on the arguments:
+</p>
+<ul><li> <tt>s_prime</tt> integer, the the new state.</li>
+<li> <tt>r</tt> float, a real valued immediate reward.</li></ul>
+<p><b>querysetstate(s)</b> A special version of the query method that sets the state to s, and returns an integer action according to the same rules as query() (including choosing a random action sometimes), but it does not execute an update to the Q-table.  It also does not update rar. There are two main uses for this method: 1) To set the initial state, and 2) when using a learned policy, but not updating it.
+</p><p>Here's an example of the API in use:
+</p>
+<pre>import QLearner as ql
+
+learner = ql.QLearner(num_states = 100, \ 
+    num_actions = 4, \
+    alpha = 0.2, \
+    gamma = 0.9, \
+    rar = 0.98, \
+    radr = 0.999, \
+    dyna = 0, \
+    verbose = False)
+
+s = 99 # our initial state
+
+a = learner.querysetstate(s) # action for state s
+
+s_prime = 5 # the new state we end up in after taking action a in state s
+
+r = 0 # reward for taking action a in state s
+
+next_action = learner.query(s_prime, r)
+</pre>
+<h2><span class="mw-headline" id="Part_2:_Navigation_Problem_Test_Cases">Part 2: Navigation Problem Test Cases</span></h2>
+<p>We will test your Q-Learner with a navigation problem as follows.  Note that your Q-Learner does not need to be coded specially for this task.  In fact the code doesn't need to know anything about it.  The code necessary to test your learner with this navigation task is implemented in testqlearner.py for you.  The navigation task takes place in a 10 x 10 grid world.  The particular environment is expressed in a CSV file of integers, where the value in each position is interpreted as follows:
+</p>
+<ul><li> 0: blank space.</li>
+<li> 1: an obstacle.</li>
+<li> 2: the starting location for the robot.</li>
+<li> 3: the goal location.</li>
+<li> 5: quicksand.</li></ul>
+<p>An example navigation problem (world01.csv) is shown below.  Following python conventions, [0,0] is upper left, or northwest corner, [9,9] lower right or southeast corner.  Rows are north/south, columns are east/west.
+</p>
+<pre>3,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,1,1,1,1,1,0,0,0
+0,5,1,0,0,0,1,0,0,0
+0,5,1,0,0,0,1,0,0,0
+0,0,1,0,0,0,1,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,2,0,0,0,0,0
+</pre>
+<p>In this example the robot starts at the bottom center, and must navigate to the top left.  Note that a wall of obstacles blocks its path, and there is some quicksand along the left side.  The objective is for the robot to learn how to navigate from the starting location to the goal with the highest total reward.  We define the reward for each step as:
+</p>
+<ul><li> -1 if the robot moves to an empty or blank space, or attempts to move into a wall</li>
+<li> -100 if the robot moves to a quicksand space</li>
+<li> 1 if the robot moves to the goal space</li></ul>
+<p>Overall, we will assess the performance of a policy as the median reward it incurs to travel from the start to the goal (higher reward is better).  We assess a learner in terms of the reward it converges to over a given number of training epochs (trips from start to goal).  <b>Important note:</b> the problem includes random actions.  So, for example, if your learner responds with a "move north" action, there is some probability that the robot will actually move in a different direction.  For this reason, the "wise" learner develops policies that keep the robot well away from quicksand.  We map this problem to a reinforcement learning problem as follows:
+</p>
+<ul><li> State: The state is the location of the robot, it is computed (discretized) as: column location * 10 + row location.</li>
+<li> Actions: There are 4 possible actions, 0: move north, 1: move east, 2: move south, 3: move west.</li>
+<li> R: The reward is as described above.</li>
+<li> T: The transition matrix can be inferred from the CSV map and the actions.</li></ul>
+<p>Note that R and T are not known by or available to the learner.  The code in <tt>testqlearner.py</tt> will test your code as follows (pseudo code):
+</p>
+<pre>Instantiate the learner with the constructor QLearner()
+s = initial_location
+a = querysetstate(s)
+s_prime = new location according to action a
+r = -1.0
+while not converged:
+    a = query(s_prime, r) 
+    s_prime = new location according to action a
+    if s_prime == goal:
+        r = +1
+        s_prime = start location
+    else if s_prime == quicksand:
+        r = -100
+    else:
+        r = -1
+</pre>
+<p>A few things to note about this code: The learner always receives a reward of -1.0 (or -100.0) until it reaches the goal, when it receives a reward of +1.0. As soon as the robot reaches the goal, it is immediately returned to the starting location.
+</p><p>Here are example solutions.  Note that these examples were created before we added "quicksand" to the project.  We will be updating the examples to reflect this change.  In the mean time, you may find these useful: 
+</p><p><a href="http://quantsoftware.gatech.edu/Mc3_p2_examples" title="Mc3 p2 examples">mc3_p2_examples</a>
+</p><p><a href="http://quantsoftware.gatech.edu/Mc3_p2_dyna_examples" title="Mc3 p2 dyna examples">mc3_p2_dyna_examples</a>
+</p>
+<h2><span class="mw-headline" id="Part_3:_Implement_Dyna_.285_points.29">Part 3: Implement Dyna (5 points)</span></h2>
+<p>Add additional components to your QLearner class so that multiple "hallucinated" experience tuples are used to update the Q-table for each "real" experience.  The addition of this component should speed convergence in terms of the number of calls to query(), <b>not necessarily running time</b>.
+</p><p>Note that it is not important that you implement Dyna exactly as described in the lecture.  The key requirement is that your code should somehow hallucinate additional experiences.  The precise method you use for discovering those experiences is flexible.  We will test your code on several test worlds with 50 epochs and with dyna = 200.  Our expectation is that with Dyna, the solution should be much better after 50 epochs than without.
+</p>
+<h2><span class="mw-headline" id="Part_4:_Implement_author.28.29_Method_.28up_to_20_point_penalty.29">Part 4: Implement author() Method (up to 20 point penalty)</span></h2>
+<p>You  should implement a method called <tt>author()</tt> that returns your Georgia Tech user ID as a string. This is the ID you use to log into canvas.  It is not your 9 digit student number.  Here is an example of how you might implement author() within a learner object:
+</p>
+<pre>class QLearner(object):
+    def author(self):
+        return 'tb34' # replace tb34 with your Georgia Tech username.
+</pre>
+<p>And here's an example of how it could be called from a testing program:
+</p>
+<pre>    # create a learner and train it
+    learner = ql.QLearner() # create a QLearner
+    print learner.author()
+</pre>
+<p>Check the template code for examples. We are adding those to the repo now, but it might not be there if you check right away.  Implementing this method correctly does not provide any points, but there will be a penalty for not implementing it.
+</p>
+<h2><span class="mw-headline" id="Contents_of_Report">Contents of Report</span></h2>
+<p>There is no report component of this assignment.  However, if you would like to impress us with your Machine Learning prowess, you are invited to submit a succinct report.
+</p>
+<h2><span class="mw-headline" id="Hints_.26_resources">Hints &amp; resources</span></h2>
+<p>This paper by Kaelbling, Littman and Moore, is a good resource for RL in general: <a rel="nofollow" class="external free" href="http://www.jair.org/media/301/live-301-1562-jair.pdf">http://www.jair.org/media/301/live-301-1562-jair.pdf</a>  See Section 4.2 for details on Q-Learning.
+</p><p>There is also a chapter in the Mitchell book on Q-Learning.
+</p><p>For implementing Dyna, you may find the following resources useful:
+</p>
+<ul><li> <a rel="nofollow" class="external free" href="http://www-anw.cs.umass.edu/~barto/courses/cs687/Chapter%209.pdf">http://www-anw.cs.umass.edu/~barto/courses/cs687/Chapter%209.pdf</a> (Section 8.2)</li>
+<li> <a rel="nofollow" class="external free" href="http://incompleteideas.net/sutton/book/bookdraft2017nov5.pdf">http://incompleteideas.net/sutton/book/bookdraft2017nov5.pdf</a></li></ul>
+<h2><span class="mw-headline" id="What_to_turn_in">What to turn in</span></h2>
+<p>Turn your project in via canvas.   All of your code must be contained within QLearner.py .
+</p>
+<ul><li> Your QLearner as <tt>QLearner.py</tt></li>
+<li> Do not submit any other files.</li></ul>
+<h2><span class="mw-headline" id="Rubric">Rubric</span></h2>
+<p>Only your QLearner class will be tested.  
+</p>
+<ul><li> For basic Q-Learning (dyna = 0) we will test your learner against 10 test worlds with 500 epochs in each world.  One "epoch" means your robot reaches the goal one time, or after 10000 steps, whichever comes first.  Your QLearner retains its state (Q-table), and then we allow it to navigate to the goal again, over and over, 500 times.  Each test (500 epochs) should complete in less than 2 seconds.  <b>NOTE</b>: an epoch where the robot fails to reach the goal will likely take <b>much</b> longer (in running time), than one that does reach the goal, and is a common reason for failing to complete test cases within the time limit.</li>
+<li> Benchmark: As a benchmark to compare your solution to, we will run our reference solution in the same world, with 500 epochs.  We will take the median reward of our reference across all of those 500 epochs.</li>
+<li> Your score: For each world we will take the median cost your solution finds across all 500 epochs.</li>
+<li> For a test to be successful, your learner should find a total reward &gt;= 1.5 x the benchmark. Note that since reward for a single epoch is negative, your solution can be up to 50% worse than the reference solution and still pass.</li>
+<li> There are 10 test cases, each test case is worth 9.5 points.</li>
+<li> Here is how we will initialize your QLearner for these test cases:</li></ul>
+<pre>    learner = ql.QLearner(num_states=100,\
+        num_actions = 4, \
+        alpha = 0.2, \
+        gamma = 0.9, \
+        rar = 0.98, \
+        radr = 0.999, \
+        dyna = 0, \
+        verbose=False) #initialize the learner
+</pre>
+<ul><li> For Dyna-Q, we will set dyna = 200.  We will test your learner against <tt>world01.csv</tt> and <tt>world02.csv</tt> with 50 epochs.  Scoring is similar to the non-dyna case: Each test should complete in less than 10 seconds. For the test to be successful, your learner should find solution with total reward to the goal &gt;= 1.5 x the  median reward our reference solution across all 50 epochs.  Note that since reward for a single epoch is negative, your solution can be up to 50% worse than the reference solution and still pass.  We will check this by taking the median of all 50 runs. Each test case is worth 2.5 points.  We will initialize your learner with the following parameter values for these test cases:</li></ul>
+<pre>    learner = ql.QLearner(num_states=100,\
+        num_actions = 4, \
+        alpha = 0.2, \
+        gamma = 0.9, \
+        rar = 0.5, \
+        radr = 0.99, \
+        dyna = 200, \
+        verbose=False) #initialize the learner
+</pre>
+<ul><li> Is the author() method correctly implemented (-20% if not)</li></ul>
+<h2><span class="mw-headline" id="Required.2C_Allowed_.26_Prohibited">Required, Allowed &amp; Prohibited</span></h2>
+<p>Required:
+</p>
+<ul><li> Your project must be coded in Python 2.7.x.</li>
+<li> Your code must run on one of the university-provided computers (e.g. buffet02.cc.gatech.edu).</li></ul>
+<p>Allowed:
+</p>
+<ul><li> You can develop your code on your personal machine, but it must also run successfully on one of the university provided machines or virtual images.</li>
+<li> Your code may use standard Python libraries.</li>
+<li> You may use the NumPy, SciPy, matplotlib and Pandas libraries.  Be sure you are using the correct versions.</li>
+<li> Code provided by the instructor, or allowed by the instructor to be shared.</li></ul>
+<p>Prohibited:
+</p>
+<ul><li> Any libraries not listed in the "allowed" section above.</li>
+<li> Any code you did not write yourself.</li>
+<li> Any Classes (other than Random) that create their own instance variables for later use (e.g., learners like kdtree).</li>
+<li> Print statements outside "verbose" checks (they significantly slow down auto grading).</li>
+<li> Any method for reading data besides util.py</li></ul>
+<h2><span class="mw-headline" id="Legacy">Legacy</span></h2>
+<ul><li><a href="http://quantsoftware.gatech.edu/MC3-Project-2-Legacy-trader" title="MC3-Project-2-Legacy-trader">MC3-Project-2-Legacy-trader</a></li>
+<li><a href="http://quantsoftware.gatech.edu/MC3-Project-2-Legacy" title="MC3-Project-2-Legacy">MC3-Project-2-Legacy</a></li>
+<li><a href="http://quantsoftware.gatech.edu/MC3-Project-4" title="MC3-Project-4">MC3-Project-4</a></li></ul>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.059 seconds
+Real time usage: 0.063 seconds
+Preprocessor visited node count: 113/1000000
+Preprocessor generated node count: 196/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key quant_mw1-mw_:pcache:idhash:155-0!*!0!!en!5!* and timestamp 20181119055110 and revision id 2931
+ -->
+</div>									<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://quantsoftware.gatech.edu/index.php?title=Qlearning_robot&amp;oldid=2931">http://quantsoftware.gatech.edu/index.php?title=Qlearning_robot&amp;oldid=2931</a>"					</div>
+													<div id="catlinks" class="catlinks catlinks-allhidden"></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="http://quantsoftware.gatech.edu/index.php?title=Special:UserLogin&amp;returnto=Qlearning+robot" title="You are encouraged to log in; however, it is not mandatory [ctrl-option-o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li id="ca-nstab-main" class="selected"><span><a href="http://quantsoftware.gatech.edu/Qlearning_robot" title="View the content page [ctrl-option-c]" accesskey="c">Page</a></span></li>
+															<li id="ca-talk" class="new"><span><a href="http://quantsoftware.gatech.edu/index.php?title=Talk:Qlearning_robot&amp;action=edit&amp;redlink=1" title="Discussion about the content page [ctrl-option-t]" accesskey="t">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label" tabindex="0"><span>Variants</span><a href="http://quantsoftware.gatech.edu/Qlearning_robot#" tabindex="-1"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="http://quantsoftware.gatech.edu/Qlearning_robot">Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="http://quantsoftware.gatech.edu/index.php?title=Qlearning_robot&amp;action=edit" title="This page is protected.
+You can view its source [ctrl-option-e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="http://quantsoftware.gatech.edu/index.php?title=Qlearning_robot&amp;action=history" title="Past revisions of this page [ctrl-option-h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label" style="">
+						<h3 id="p-cactions-label" tabindex="0"><span>More</span><a href="http://quantsoftware.gatech.edu/Qlearning_robot#" tabindex="-1"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="http://quantsoftware.gatech.edu/index.php" id="searchform">
+														<div id="simpleSearch">
+															<input type="search" name="search" placeholder="Search" title="Search Quantitative Analysis Software Courses [ctrl-option-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchButton" class="searchButton">								</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a style="background-image: url(/skins/common/images/wiki.png);" href="http://quantsoftware.gatech.edu/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal first" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-QuantSoftware_Research_Group" aria-labelledby="p-QuantSoftware_Research_Group-label">
+			<h3 id="p-QuantSoftware_Research_Group-label">QuantSoftware Research Group</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-QSRG-Home"><a href="http://quantsoftware.gatech.edu/Main_Page">QSRG Home</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-Fall_2018" aria-labelledby="p-Fall_2018-label">
+			<h3 id="p-Fall_2018-label">Fall 2018</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-Main-course-page"><a href="http://quantsoftware.gatech.edu/Machine_Learning_for_Trading_Course">Main course page</a></li>
+													<li id="n-Syllabus"><a href="http://quantsoftware.gatech.edu/CS7646_Fall_2018">Syllabus</a></li>
+													<li id="n-Schedule"><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vScJGcyXiOT1BAHGNhu11xfdTq2lXd4VfLZ1ftbYuyGh6zsbXwPOxiHXo2KotrPBzuxZEKbvNqqJg9k/pubhtml?gid=0&amp;single=true" rel="nofollow">Schedule</a></li>
+													<li id="n-Assignments"><a href="http://quantsoftware.gatech.edu/CS7646_Fall_2018#Assignments">Assignments</a></li>
+													<li id="n-ML4T-Software"><a href="http://quantsoftware.gatech.edu/ML4T_Software_Setup">ML4T Software</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-Site" aria-labelledby="p-Site-label">
+			<h3 id="p-Site-label">Site</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-recentchanges"><a href="http://quantsoftware.gatech.edu/Special:RecentChanges" title="A list of recent changes in the wiki [ctrl-option-r]" accesskey="r">Recent changes</a></li>
+													<li id="n-randompage"><a href="http://quantsoftware.gatech.edu/Special:Random" title="Load a random page [ctrl-option-x]" accesskey="x">Random page</a></li>
+													<li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+
+			<div class="body">
+									<ul>
+													<li id="t-whatlinkshere"><a href="http://quantsoftware.gatech.edu/Special:WhatLinksHere/Qlearning_robot" title="A list of all wiki pages that link here [ctrl-option-j]" accesskey="j">What links here</a></li>
+													<li id="t-recentchangeslinked"><a href="http://quantsoftware.gatech.edu/Special:RecentChangesLinked/Qlearning_robot" title="Recent changes in pages linked from this page [ctrl-option-k]" accesskey="k">Related changes</a></li>
+													<li id="t-specialpages"><a href="http://quantsoftware.gatech.edu/Special:SpecialPages" title="A list of all special pages [ctrl-option-q]" accesskey="q">Special pages</a></li>
+													<li id="t-print"><a href="http://quantsoftware.gatech.edu/index.php?title=Qlearning_robot&amp;printable=yes" rel="alternate" title="Printable version of this page [ctrl-option-p]" accesskey="p">Printable version</a></li>
+													<li id="t-permalink"><a href="http://quantsoftware.gatech.edu/index.php?title=Qlearning_robot&amp;oldid=2931" title="Permanent link to this revision of the page">Permanent link</a></li>
+													<li id="t-info"><a href="http://quantsoftware.gatech.edu/index.php?title=Qlearning_robot&amp;action=info">Page information</a></li>
+											</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 12 November 2018, at 00:26.</li>
+											<li id="footer-info-viewcount">This page has been accessed 17,712 times.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://quantsoftware.gatech.edu/My_wiki:Privacy_policy" title="My wiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="http://quantsoftware.gatech.edu/My_wiki:About" title="My wiki:About">About Quantitative Analysis Software Courses</a></li>
+											<li id="footer-places-disclaimer"><a href="http://quantsoftware.gatech.edu/My_wiki:General_disclaimer" title="My wiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-poweredbyico">
+															<a href="http://www.mediawiki.org/"><img src="./QlearningRobot_Information_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+													</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"ready","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
+}</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":49});
+}</script>
+	
+
+	<div class="suggestions" style="display: none; font-size: 13px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>
